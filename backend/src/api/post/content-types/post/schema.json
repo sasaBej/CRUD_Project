@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "minLength": 5
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 30
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "adventure",
+        "comedy",
+        "science",
+        "education"
+      ],
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "maxLength": 50
+    }
+  }
+}

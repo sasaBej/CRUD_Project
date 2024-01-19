@@ -1,0 +1,16 @@
+.linkItem {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: .5rem;
+    transition: all .3s;
+
+    &:hover {
+        color: #e8e8e8;
+    }
+
+    &.active {
+        background-color: #fff;
+        color: #000;
+    }
+}
